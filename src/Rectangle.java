@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle extends TwoDimensionalShape {
     private double length, width;
 
     public Rectangle(double length, double width) {
@@ -30,7 +30,7 @@ public class Rectangle {
 
     public double getPerimeter()
     {
-        return 2*length+width;
+        return 2*(length+width);
     }
 
     public double getArea()
@@ -45,7 +45,7 @@ public class Rectangle {
 
     public String toString()
     {
-        return String.format("%s %.1f * %.1f", isSquare()?"Square":"Rectangle",
+        return String.format("%s %.1fx%.1f", isSquare()?"Square":"Rectangle",
                                             length, width);
     }
 }

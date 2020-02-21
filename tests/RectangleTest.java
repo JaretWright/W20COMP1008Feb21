@@ -53,17 +53,35 @@ public class RectangleTest {
 
     @Test
     public void getPerimeter() {
+        double expResult = 30;
+        assertEquals(expResult, rectangle.getPerimeter(), 0.0);
     }
 
     @Test
     public void getArea() {
+        double expResult = 50;
+        assertEquals(expResult, rectangle.getArea(), 0.0);
     }
 
     @Test
     public void isSquare() {
+        assertEquals(true, square.isSquare());
     }
 
     @Test
-    public void toStringCustom() {
+    public void isSquareFalse() {
+        assertEquals(false, rectangle.isSquare());
+    }
+
+    @Test
+    public void toStringSquare() {
+        String expResult = "Square 5.0x5.0";
+        assertEquals(expResult, square.toString());
+    }
+
+    @Test
+    public void toStringRectangle() {
+        String expResult = "Rectangle 5.0x10.0";
+        assertEquals(expResult, rectangle.toString());
     }
 }
