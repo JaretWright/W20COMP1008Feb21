@@ -5,6 +5,11 @@ public class Circle extends TwoDimensionalShape{
         setRadius(radius);
     }
 
+    public String getColour()
+    {
+        return "red";
+    }
+
     public double getRadius() {
         return radius;
     }

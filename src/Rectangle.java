@@ -6,6 +6,11 @@ public class Rectangle extends TwoDimensionalShape {
         this.width = width;
     }
 
+    public String getColour()
+    {
+        return "Yellow";
+    }
+
     public double getLength() {
         return length;
     }

@@ -6,4 +6,5 @@ public abstract class TwoDimensionalShape {
      * the method
      */
     public abstract double getArea();
+    public abstract String getColour();
 }
